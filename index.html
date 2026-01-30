@@ -1,0 +1,487 @@
+<!-- HTML Grundstruktur für eine responsive Rezept-Website (Whisky Sour) -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisky Sour Rezept</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<!-- Logo und Navigation -->
+    <header>
+        
+
+        <div class="logo">
+  <!-- SVG von Figma -->
+  <svg  viewBox="0 0 75 75" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.7097 56.7512L19.2329 66.2287C19.606 68.5953 21.6156 70.3125 24.012 70.3125H50.988C53.3844 70.3125 55.394 68.5953 55.7659 66.2321C56.4901 61.3098 57.9381 52.9775 58.6714 48.1664C58.7768 47.5273 58.3443 46.9248 57.7057 46.8201C55.8572 46.6837 56.3186 49.1944 55.9401 50.3905C55.9403 50.3906 49.8755 50.3906 49.8755 50.3906L50.7431 43.3479C51.0988 39.9203 46.9097 38.2297 44.3654 36.9962C38.0864 34.5267 30.5239 35.6527 25.4494 40.1733C24.5464 40.9738 24.1001 42.1606 24.2546 43.3365L24.559 45.8444C24.638 46.487 25.2319 46.9437 25.8636 46.8664C26.5068 46.7886 26.9646 46.2044 26.8867 45.5618L26.58 43.0424C26.5263 42.6275 26.6842 42.211 26.9966 41.934C31.4078 37.9924 38.0406 37.0377 43.5001 39.1743C45.1366 39.8277 46.6518 40.7558 47.9965 41.9277C48.3158 42.211 48.4737 42.6275 48.4188 43.0521L46.3921 59.5047C46.3119 60.1479 45.7695 60.6331 45.1286 60.6331H29.8714C29.2305 60.6331 28.688 60.1479 28.6079 59.5041L27.6123 51.4194C27.5268 50.9984 27.2622 50.6255 26.8493 50.4715C26.7204 50.4308 26.581 50.4177 26.4484 50.3906H19.0632C18.3354 45.8601 17.6072 41.3297 16.8835 36.799C16.7164 35.7525 17.2108 34.7351 18.1515 34.2029C19.6724 33.3269 21.3249 32.5315 23.0656 31.8375C25.4757 30.8676 27.9945 30.1323 30.5626 29.6505C32.2529 29.3226 33.4808 27.8286 33.4808 26.0977V22.8407C33.4808 22.1935 32.9567 21.6688 32.309 21.6688C31.6612 21.6688 31.1371 22.1935 31.1371 22.8407V26.0977C31.1371 26.7082 30.7079 27.2346 30.1231 27.3479C25.5602 28.1985 20.9678 29.8864 16.9899 32.167C15.1955 33.1821 14.2445 35.1454 14.5695 37.1692C15.612 43.697 16.6557 50.2252 17.7097 56.7512ZM25.4135 52.7344L26.2825 59.7919C26.5068 61.6075 28.0495 62.9768 29.8714 62.9768H45.1286C46.9505 62.9768 48.4932 61.6075 48.7175 59.7914L49.5868 52.7344H55.5627C55.4214 53.6166 55.2768 54.4985 55.1365 55.3797L53.4508 65.8647C53.2596 67.0835 52.224 67.9687 50.988 67.9687H24.012C22.776 67.9687 21.7403 67.0835 21.5481 65.8613C21.12 63.1912 19.846 55.2846 19.4391 52.7344H25.4135Z" fill="#F5EACE"/>
+<path d="M29.8423 18.1532H40.8058V26.0977C40.8058 27.8286 42.0337 29.3226 43.7309 29.6516C46.2921 30.1323 48.8109 30.8676 51.2233 31.8386C53.0226 32.5595 54.5483 33.3005 56.1431 34.2075C57.0758 34.7351 57.5702 35.7525 57.4031 36.799C57.3974 36.8339 57.394 36.8694 57.3905 36.9043L56.5723 42.0015C56.4693 42.6401 56.9042 43.2415 57.5428 43.3445C58.167 43.4481 58.7869 43.0169 58.8863 42.3735L59.7229 37.1652C60.2217 34.2641 58.0924 32.2872 55.6051 31.2562C52.1019 29.4551 48.0872 28.0773 44.1703 27.3491C43.5787 27.2346 43.1495 26.7082 43.1495 26.0977V18.1532H43.7309C44.3786 18.1532 44.9028 17.6285 44.9028 16.9813C44.9028 16.3341 44.3786 15.8094 43.7309 15.8094H43.1495V8.20311C43.1495 6.26448 41.5725 4.68748 39.6339 4.68748H33.9393C32.0007 4.68748 30.4237 6.26448 30.4237 8.20311V15.8094H29.8423C28.3113 15.8363 28.2932 18.1239 29.8423 18.1532ZM32.7674 8.20312C32.7674 7.5571 33.2927 7.03125 33.9393 7.03125H39.6339C40.2805 7.03125 40.8058 7.5571 40.8058 8.20312V15.8094H32.7674V8.20312Z" fill="#F5EACE"/>
+</svg>
+
+<span class="logo-text">Makers Mark Sour</span>
+
+</div>
+
+
+<nav class="nav">
+
+
+
+<!-- Searchbar und Button -->
+    <div class="header-top">
+
+     <form class="search" action="#" method="get">
+    <input type="text" name="query" placeholder="Suche..." aria-label="Suche"/>
+    <button type="submit" aria-label="Suchen">  
+        <!-- SVG von Figma -->
+        <svg  viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13.3047" cy="12.8909" r="9.23969" transform="rotate(15 13.3047 12.8909)"  stroke-width="2.57143"/>
+<line x1="21.1587" y1="18.1387" x2="36.2276" y2="30.3696"  stroke-width="2.57143"/>
+</svg>
+</button>
+
+
+
+<!--Profile Button und Burger -->
+</form>
+     <button class="profile-btn" aria-label="Profil">👤</button>
+     <button class="burger" aria-label="Menü">☰</button>
+
+</div>
+
+
+
+<!-- Navigationsmenü -->
+    <ul class="menu">
+     <li><a href="#rezept">Rezept</a></li>
+     <li><a href="#einkaufsliste">Einkaufsliste</a></li>
+     <li><a href="#zutaten">Zutaten</a></li>
+     <li><a href="#login"></a>Login</a></li>
+     </ul>
+
+    
+
+        </nav>
+    </header>
+
+
+
+<!-- --------------------------------------------------------------------------------
+    Hauptinhalt der Seite 
+  ------------------------------------------------------------------------------------>
+
+    
+<!-- Tab-Inhalte -->
+<main>
+<section class="recipe-split">
+     <div class="recipe-left">
+
+    
+        <div class="tabs"> 
+        <button class="tab active"> Zutaten</button>
+        <button class="tab"> Zubereitung</button>
+        <button class="tab"> Hilfsmittel</button>
+        </div>
+
+        
+
+<div class="tab-content">
+
+  <section class="content active" data-tab="zutaten">
+
+
+    <!-- Zutaten Inhalt -->
+
+
+     <!-- Rezept Infos und Portionen Angabe -->
+<div class="meta">
+  <div class="meta-box">
+   <!-- Portionen Steuerung -->
+    <div class="portionen-steuerung">
+      <button id="minus" type="button">-</button>
+      <input id="portionen" class="meta-input" type="number" value="1" min="1">
+      <button id="plus" type="button">+</button>
+      <button id="apply" type="button" class="action-btn">Anwenden</button>
+      <button id="reset" type="button" class="action-btn">Zurücksetzen</button>
+    </div>
+</div>
+
+<!-- Rezept Stats -->
+ <!--Zeit + Icon-->
+  <div class="meta-box meta-stats">
+    <div class="meta-row"><svg  viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="21" height="21" fill="#231F20"/>
+<path d="M13.125 17.5V16.5117C13.125 16.0407 12.8726 15.6058 12.4637 15.3721L10.1276 14.0372C10.0873 14.0142 10.0377 14.0142 9.99738 14.0372L7.66132 15.3721C7.25238 15.6058 7 16.0407 7 16.5117V17.5" stroke="#F5EACE" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.7471 14.7129C15.1012 14.958 15.3125 15.3613 15.3125 15.792V17.9375H4.8125V15.792L4.82227 15.6318C4.86758 15.2628 5.06813 14.9274 5.37793 14.7129L10.0625 11.4688L14.7471 14.7129ZM15.3125 3.9375V6.08301C15.3125 6.51368 15.1012 6.91695 14.7471 7.16211L10.0625 10.4053L5.37793 7.16211C5.02384 6.91695 4.8125 6.51368 4.8125 6.08301V3.9375H15.3125Z" stroke="#F5EACE" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+ <span>5 Min</span></div>
+
+
+<!-- Schwierigkeitsgrad + Icon-->
+    <div class="meta-row"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.3271 3.56445C11.4478 3.45946 11.6528 3.34555 11.9111 3.40234C12.1697 3.45929 12.3087 3.64889 12.374 3.79492C12.4342 3.92966 12.4588 4.08066 12.4727 4.20898C12.5008 4.47052 12.5 4.83862 12.5 5.27051V9.7002H13.8701C14.5575 9.7002 15.1301 9.69834 15.5645 9.7627C16.0073 9.82838 16.4357 9.98024 16.6992 10.3926C16.9624 10.8047 16.9203 11.2563 16.7939 11.6855C16.6699 12.1068 16.4275 12.6261 16.1387 13.25L13.4072 19.1504C13.2259 19.5421 13.0719 19.8761 12.9365 20.1016C12.8701 20.2122 12.784 20.3386 12.6729 20.4355C12.5522 20.5405 12.3472 20.6545 12.0889 20.5977C11.8303 20.5407 11.6913 20.3511 11.626 20.2051C11.5658 20.0703 11.5412 19.9193 11.5273 19.791C11.4992 19.5295 11.5 19.1614 11.5 18.7295V14.2998H10.1299C9.44253 14.2998 8.86987 14.3017 8.43555 14.2373C7.99271 14.1716 7.56427 14.0198 7.30078 13.6074C7.03757 13.1953 7.07974 12.7437 7.20605 12.3145C7.33007 11.8932 7.5725 11.3739 7.86133 10.75L10.5928 4.84961C10.7741 4.45786 10.9281 4.12388 11.0635 3.89844C11.1299 3.78784 11.216 3.66136 11.3271 3.56445Z" stroke="#F5EACE"/>
+</svg>
+ <span>Easy</span></div>
+
+
+<!-- Kalorien + Icon-->
+    <div class="meta-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5 10.0003C14.5 9.20875 15.5528 8.99895 15.8321 9.73957C16.5077 11.5311 17 13.1337 17 14.0002C17 16.7616 14.7614 19.0002 12 19.0002C9.23858 19.0002 7 16.7616 7 14.0002C7 13.0693 7.56822 11.2887 8.32156 9.33698C9.29743 6.80879 9.78536 5.54469 10.3877 5.4766C10.5804 5.45482 10.7907 5.49399 10.9626 5.58371C11.5 5.86413 11.5 7.24285 11.5 10.0003C11.5 10.8287 12.1716 11.5003 13 11.5003C13.8284 11.5003 14.5 10.8287 14.5 10.0003Z" stroke="#F5EACE"/>
+<path d="M11 19L10.7372 18.343C10.2816 17.204 10.4737 15.9079 11.24 14.95C11.6296 14.463 12.3704 14.463 12.76 14.95C13.5263 15.9079 13.7184 17.204 13.2628 18.343L13 19" stroke="#F5EACE"/>
+</svg>
+ <span>210 kcal</span></div>
+
+
+  </div>
+
+
+  <div class="meta-box meta-unit">
+    <div class="meta-label">Einheit</div>
+    <div class="meta-unit-text">cl </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Rechner für Zutatenmengen und erstellung Tabelle - INNERHALB der content section -->
+<div class="rechner">
+  <table id="rezeptTabelle">
+    <tbody></tbody>
+  </table>
+</div>
+ 
+  </section>
+
+  <section class="content" data-tab="zubereitung">
+
+
+
+
+
+    <!-- Zubereitung Inhalt -->
+<!-- Schritt 1-->
+    <ol class="steps">
+      <li class="step">
+        <span class="step-number">1</span>
+         <div class="step-content">
+         <h4 class="step-title">Vorbereitung</h4>
+         <ul class="step-list">
+          <li>Zitronenzeste (Schale) abreiben oder abschneiden</li>
+          <li>Zitrone halbieren und Saft auspressen</li>
+        </ul>
+        </div>
+      </li>
+
+<!-- Schritt 2-->
+      <li class="step">
+        <span class="step-number">2</span>
+         <div class="step-content">
+          <h4 class="step-title">Zutaten in den Shaker geben</h4>
+         <ul class="step-list">
+          <li> 6 cl Whisky</li>
+          <li> 3 cl frischer Zitronensaft</li>
+          <li> 2 cl Zuckersirup</li>
+          <li> 1 cl Eiweiß</li>
+        </ul>
+        </div>
+      </li>
+
+<!-- Schritt 3-->
+      <li class="step">
+        <span class="step-number">3</span>
+         <div class="step-content">
+          <h4 class="step-title">Dry Shake</h4>
+        <ul class="step-list">
+          <li>Shaker schließen (Deckel + Sieb)</li>
+          <li>7 Sekunden kräftig schütteln</li>
+        </ul>
+        </div>
+      </li>
+
+<!-- Schritt 4-->
+      <li class="step">
+        <span class="step-number">4</span>
+         <div class="step-content">
+          <h4 class="step-title">Eis Vorbereiten</h4>
+        <ul class="step-list">
+          <li>Whiskyglas (Tumbler) mit Eiswürfeln füllen</li>
+          <li>Shaker öffnen und ebenfalls Eiswürfel hineingeben</li>
+          <li>Shaker schließen (Deckel + Sieb)</li>
+          <li>Erneut 7 Sekunden kräftig schütteln</li>
+        </ul>
+        </div>
+      </li>
+
+<!-- Schritt 5-->
+      <li class="step">
+        <span class="step-number">5</span>
+         <div class="step-content">
+          <h4 class="step-title">Abseihen</h4>
+         <ul class="step-list">
+          <li>Shaker öffnen</li>
+          <li>Durch das eingebaute Sieb ins Eisglas gießen</li>
+          <li><em>(wenn du’s extra fein willst: zusätzlich durch ein feines Sieb)</em></li>
+        </ul>
+        </div>
+      </li>
+
+<!-- Schritt 6-->
+      <li class="step">
+        <span class="step-number">6</span>
+         <div class="step-content">
+          <h4 class="step-title">Garnieren & Servieren</h4>
+        <ul class="step-list">
+          <li>Zitronenzeste über dem Glas ausdrücken (Öle kommen raus)</li>
+          <li>Zeste eindrehen und ins Glas geben/auflegen</li>
+          <li>Servieren</li>
+        </ul>
+        </div>
+      </li>
+
+    </ol>
+
+  </section>
+
+
+
+
+
+
+<!-- Hilfsmittel Inhalt -->
+
+
+
+  <section class="content" data-tab="hilfsmittel">
+  <ul class="tools">
+
+<!-- Tumblr Glas + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 4H16L15 21H9L8 4Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M9.3 8H14.7" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 12L12 14" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 12L12 14" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5 6.2L10.1 10.5" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+        <div class="tool-body">
+          <h4 class="tool-title">Whiskyglas (Tumbler)</h4>
+          <p class="tool-text">Zum Servieren mit Eiswürfeln.</p>
+        </div>
+      </label>
+    </li>
+
+    <!-- Messer + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 8L14.1061 7.10607C14.0475 7.04749 13.9525 7.04749 13.8939 7.10607L8 13" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 9.5L14.8939 11.8939C14.9525 11.9525 15.0475 11.9525 15.1061 11.8939L18.1716 8.82843C19.7337 7.26633 19.7337 4.73367 18.1716 3.17157L18.1061 3.10607C18.0475 3.04749 17.9525 3.04749 17.8939 3.10607L14 7" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.5 16.5L8.5 12.5C9.32843 11.6716 10.6716 11.6716 11.5 12.5C12.3284 13.3284 12.3284 14.6716 11.5 15.5L7.5 19.5C6.67157 20.3284 5.32843 20.3284 4.5 19.5C3.67157 18.6716 3.67157 17.3284 4.5 16.5Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 16.5L7 14" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</span>
+        <div class="tool-body">
+          <h4 class="tool-title">Messer</h4>
+          <p class="tool-text">Zum Schneiden der Zitronenzeste.</p>
+        </div>
+      </label>
+    </li>
+
+    <!-- Cocktail Shaker + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7.5 5H15.5L14.2 22H8.8L7.5 5Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M9 3H18L17.2 16H10.6" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M8.2 8H14.8" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 6.5H17.2" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+</span>
+        <div class="tool-body">
+          <h4 class="tool-title">Cocktail-Shaker</h4>
+          <p class="tool-text">Zum Shaken (Dry Shake und Shake mit Eis).</p>
+        </div>
+      </label>
+    </li>
+
+    <!-- Jigger + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M7 3H17L14 11.5C13.6 12.6 13.6 13.4 14 14.5L17 23H7L10 14.5C10.4 13.4 10.4 12.6 10 11.5L7 3Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M8.2 6H15.8" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.0 20H16.0" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 12H14.5" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+</span>
+        <div class="tool-body">
+          <h4 class="tool-title">Jigger</h4>
+          <p class="tool-text">Für genaue ml-Angaben.</p>
+        </div>
+      </label>
+    </li>
+
+    <!-- Zitruspresse + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M6 16C7.2 19.2 9.6 21 12 21C14.4 21 16.8 19.2 18 16" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 16H18" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.2 16L20 15" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 8L9 16H15L12 8Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M10.3 12.3L13.7 12.3" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 10.5L13 10.5" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.7 14.1L14.3 14.1" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg></span>
+        <div class="tool-body">
+          <h4 class="tool-title">Zitruspresse</h4>
+          <p class="tool-text">Alternativ per Hand auspressen.</p>
+        </div>
+      </label>
+    </li>
+
+    <!-- Feinesieb + Icon -->
+    <li>
+      <label class="tool tool-check">
+        <input class="tool-cb" type="checkbox">
+        <span class="tool-icon"><svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M6 10A6 6 0 0 1 18 10V12H6V10Z" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M12 12V20" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 20H14" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 14.5H17" stroke="#F5EACE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="9" cy="11" r="0.9" fill="#F5EACE"/>
+<circle cx="12" cy="11" r="0.9" fill="#F5EACE"/>
+<circle cx="15" cy="11" r="0.9" fill="#F5EACE"/>
+
+</svg>
+</span>
+        <div class="tool-body">
+          <h4 class="tool-title">Feines Sieb (optional)</h4>
+          <p class="tool-text">Für extra feines Abseihen.</p>
+        </div>
+      </label>
+    </li>
+
+  </ul>
+</section>
+
+
+</div>
+
+
+
+</div>
+        
+    
+        <!-- Rezept Bild -->
+        <div class="recipe-right">
+             
+        </div>
+
+        
+</section>
+
+
+
+ <!-- Fakten, Tipps, Geschmaksnoten und Bewertung -->
+
+
+ <!-- Makers Mark Sour Beschreibung -->
+  <section class="recipe-footer">
+
+<div class="footer-left">
+ <section class="recipe-info">
+    <h2>Makers Mark Sour</h2>
+    <p>Ein Whisky Sour ist im Grunde ein einfaches Versprechen: Die perfekte Balance zwischen der Frische der Zitrone und der Wärme des Whiskys. Doch Einfachheit verzeiht keine Fehler. Viele Bourbons bringen eine scharfe, würzige Note in den Drink, die gegen die Säure ankämpft, statt sie zu umarmen.</p>
+ </section>
+
+    <!-- Tipps für die Zubereitung -->
+    <section class="bartender-tips">
+        <h3>Bartender-Tipps</h3>
+        <ul>
+            <li>Verwende frische Zitrusfrüchte für den besten Geschmack.</li>
+            <li>Stelle sicher, dass der Whisky nicht zu kalt ist, um die Aromen vollständig zu genießen.</li>
+            <li>Ein guter Whisky Sour sollte eine perfekte Balance zwischen Säure und Süße haben.</li>
+        </ul>
+    </section>
+    </div>
+
+
+<!-- Geschmacksnoten -->
+    <div class="footer-right">
+        <section class="geschmacksnoten">
+  <h3 class="taste-title">Geschmacksnoten</h3>
+
+  <div class="taste-row" style="--v:70">
+    <span class="taste-label">Alkohol</span>
+    <div class="taste-bar"><span class="taste-fill"></span></div>
+  </div>
+
+  <div class="taste-row" style="--v:45">
+    <span class="taste-label">Bitterkeit</span>
+    <div class="taste-bar"><span class="taste-fill"></span></div>
+  </div>
+
+  <div class="taste-row" style="--v:65">
+    <span class="taste-label">Säure</span>
+    <div class="taste-bar"><span class="taste-fill"></span></div>
+  </div>
+
+  <div class="taste-row" style="--v:80">
+    <span class="taste-label">Süße</span>
+    <div class="taste-bar"><span class="taste-fill"></span></div>
+  </div>
+</section>
+  <!-- Bewertung -->
+   <section class="bewertung">
+  
+  <h3 class="rating-title">Bewertungen</h3>
+  <div class="rating-row" aria-label="Bewertung 4 von 5, 17 Bewertungen">
+    <div class="stars" data-rating="4" data-max="5"></div>
+    <span class="rating-count">17 Bewertungen</span>
+  </div>
+</section>
+
+
+</div>
+  </section>
+
+</main>
+
+
+
+<!-- -------------------------------------------------------------------------------- -->
+
+    <footer>
+        <!-- Footer-Inhalt -->
+         <!-- Fakten, Tipps, Geschmaksnoten und Bewertung -->
+    </footer>
+
+    <!-- JavaScript-Datei einbinden -->
+    <script src="script.js"></script>
+</body>
+</html>
