@@ -1,0 +1,1087 @@
+/* dunkles elegantes Whisky-Design, responsive layout */
+body {
+    font-family: 'Special Elite', cursive;
+    background-color: #1a1a1a;
+    color: #F5EACE; /* Flaschen Ettiket Farbe */
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BE2336; /* Wachsrot Header */
+    padding: 1.5rem 2rem;
+    text-align: left;
+    
+    
+}
+
+/* =========================
+   Logo-Stil 
+   =========================*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #F5EACE;
+}
+
+.logo svg {
+  width: 60px;
+  height: 60px;
+}
+
+/* =========================
+   Suchleiste-Stil 
+   =========================*/
+.search {display: flex;
+  align-items: center;
+  border: 2.5px solid #F5EACE;
+  border-radius: 999px;
+  padding: 0.25rem 0.5rem;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  color: #F5EACE;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: #F5EACE;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.search svg {
+    width: 30px;
+    height: 30px;
+    stroke: currentColor;
+    transition: 0.15s ease;
+ 
+}
+
+search:focus-within svg {
+    stroke: #a77481; /* Wachsrot Header */
+}
+
+.search button {
+    background: none;
+    border: none;
+    padding : 0.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    color:#F5EACE; /* Flaschen Ettiket Farbe */
+    display: flex;
+    align-items: center;
+    
+}
+
+.search button:hover svg{
+    background-color: #a77481; /* Wachsrot Header */
+    transform: scale(1.05);
+    border-radius: 100%;
+}
+
+.search button:focus-visible {
+  outline: 2px solid #F5EACE;
+  outline-offset: 2px;
+}
+
+
+/* =========================
+   Navigation-Stil 
+   =========================*/
+
+.logo-text {
+    font-size: 2.0rem;
+    font-family: 'Special Elite', cursive;
+    color: #F5EACE; /* Flaschen Ettiket Farbe */
+}
+
+
+.header-top{
+    display: contents;
+}
+
+.burger {
+    display: none;
+    font-size: 3.3rem;
+    color: #F5EACE; /* Flaschen Ettiket Farbe */
+    background-color: #BE2336; /* Wachsrot Header */
+    border: none;
+
+}
+    
+    
+
+.nav{
+    display : flex;
+    align-items: center;
+    gap:2rem;
+    flex: 1;
+     justify-content: flex-end;
+   
+}
+
+.search {
+    margin-right: auto;
+    margin-left: 15rem;
+}
+
+nav ul {
+    margin-right: 10000rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right:1.5rem;
+    text-align: right;
+}
+
+nav ul li a {
+    color: #F5EACE; /* Flaschen Ettiket Farbe */
+    text-decoration: none;
+}
+/*Profil Button Stil */
+.profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:#F5EACE; /* Flaschen Ettiket Farbe */
+    font-size: 2.0rem;
+
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a77481; /* Wachsrot Header */
+
+    order: 3;
+}
+
+/* =========================
+   Responsive Design 
+   =========================*/
+@media (max-width: 1267px) 
+ {
+  .burger { display: block; }
+  nav ul { display: none; }
+
+
+}
+
+@media (max-width: 1267px) {
+  .menu { display: none; }
+  .menu.open { display: block; }
+}
+
+@media (max-width: 1267px) {
+  .profile-btn { display: none; }
+  
+}
+
+@media (max-width: 1267px) {
+  .logo-text { display: none; }
+
+}
+
+@media (max-width: 1267px) {
+  .logo svg { width: 80px; height: 80px; }
+
+}
+@media (max-width: 900px) {
+  .search {
+    margin-left: auto;
+    height: auto;
+    width: auto;
+    
+
+  }
+}
+
+
+
+
+/* =========================
+   Hauptinhalt 
+   =========================*/
+main {
+    
+    color: #F5EACE; /* Flaschen Ettiket Farbe */
+    
+}
+
+/* =========================
+   Rezept-Aufteilung Stil 
+   =========================*/
+.recipe-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1246px) 1fr;
+    min-height: 100vh;
+}
+
+.recipe-left {
+    background-color: #231F20; /*Makers Mark Schriftfarbe*/
+}
+
+.recipe-right {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* =========================
+   Tabs-Stil 
+   =========================*/
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 6rem;
+    
+    
+}
+
+.tab {
+  background: none;
+  border: none;
+
+  padding: 1.5rem 0;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 1.7rem;
+  color: #231F20; /*Makers Mark Schriftfarbe*/
+  background-color: #F5EACE; /* Flaschen Ettiket Farbe */
+
+  text-align: center;
+  
+}
+.tab.active {
+    border-bottom: 3px solid #BE2336; /* Wachsrot Header */
+    font-weight: 600;
+}
+.tab:hover {
+    background-color: #a77481; /* Wachsrot Header */
+    
+}
+
+.tab-content {
+    padding: 2rem;
+    transition: background-color 0.3s ease;
+    background-color: #231F20; /*Makers Mark Schriftfarbe*/
+    max-height: 797px;
+    overflow: auto;
+   
+    
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+     
+}
+
+/* =========================
+   Rezeptbild-Stil 
+   =========================*/
+
+   .recipe-layout {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem;
+   }
+
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+   .recipe-right{
+  background-image: url("Whisky Sour.png");
+  background-size: cover;         
+  background-position: 65% 30%;    
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.recipe-right{
+  background-position: 65% 30%;  
+} 
+
+
+
+/* =========================
+   responsive Design für Tabs und Rezeptbild
+    =========================*/
+
+
+
+@media (max-width: 1261px) {
+  .recipe-split {
+    grid-template-columns: 1fr;
+  }
+
+
+.recipe-right{
+    grid-row: 1;
+    height: 100vh;        
+  }
+  .recipe-left{
+    grid-row: 2;
+  }
+}
+
+
+
+
+.recipe-right img {
+  display: none;
+}
+
+
+/* schiebt Tabs leicht ins Bild rein */
+@media (max-width: 1261px) {
+  .tabs {
+    margin: -50px  0 0;  
+    position: relative;
+    z-index: 10;
+    
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    height: 6rem;          
+  }
+
+  @media (max-width: 1246px) {
+  .tab-content {
+    padding-top: calc(2rem + 50px); /* deine 2rem + der Overlap */
+  }
+}
+
+@media (max-width: 900px) {
+  .tab-content {
+    padding: 24px 16px;
+    padding-top: calc(24px + 50px);
+  }
+}
+
+
+
+  .tab {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .tab-content {
+    padding: 24px 16px;
+  }
+}
+
+
+
+
+/*==================================================
+   Zutaten Tab Komplett Rechner Stil 
+   ==================================================*/
+
+
+
+/* =========================
+   Rezept Infos und Portionen Angabe Stil
+   =========================*/
+
+   .meta{
+  display: grid;
+  grid-template-columns: 340px 2fr 240px;
+  gap: 6rem;
+  align-items: start;
+  margin: 0.05rem 0 1rem;
+  color: #F5EACE;
+}
+
+.meta-box{
+  font-size: 1.95rem;
+  padding: 50px;
+  gap: 40px;
+  text-align: center;
+}
+
+.meta-label{
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+
+.meta-input{
+  width: 108px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #F5EACE;
+  background: transparent;
+  color: #F5EACE;
+  outline: none;
+  text-align: center;
+}
+
+.meta-input:focus{
+  border-color: #BE2336; /* Wachsrot Header */
+}
+
+/* Entfernt die +/- Spinner in Chrome/Safari/Edge */
+.meta-input::-webkit-outer-spin-button,
+.meta-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Entfernt die +/- Spinner in Firefox */
+.meta-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.portionen-steuerung {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#minus,
+
+#plus {
+  flex: 0 0 auto;
+}
+
+#minus {
+  order: 1;
+}
+
+.meta-input {
+  order: 2;
+  flex: 0 0 80px;
+}
+
+#plus {
+  order: 3;
+  
+}
+
+#apply {
+  order: 4;
+  flex: 1 1 100%;
+  margin-top: 0.5rem;
+}
+
+#reset {
+  order: 5;
+  flex: 1 1 100%;
+  margin-top: 0;
+}
+
+.portionen-steuerung > #minus,
+.portionen-steuerung > #plus,
+.portionen-steuerung > .meta-input {
+  flex: 0 0 auto;
+}
+
+.meta-stats{
+  display: grid;
+  gap: 0.6rem;
+}
+
+.meta-row{
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  opacity: 0.95;
+}
+
+.meta-unit-text{
+  opacity: 1.95;
+  line-height: 1.2;
+}
+
+.meta {
+  border-bottom: 1px solid #F5EACE;
+  padding-bottom: 1rem;
+}
+
+.rechner table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.rechner th,
+.rechner td {
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    color: #F5EACE;
+}
+
+.rechner th {
+    background-color: #8B7355;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #8B7355;
+}
+
+.rechner td {
+    background-color: #231F20;
+    border-bottom: 1px solid #444;
+}
+
+.rechner tr:last-child td {
+    border-bottom: none;
+}
+
+/*Zeit Icon*/
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #F5EACE;
+}
+
+.meta-row svg {
+  width: 50px;
+  height: 50px;
+}
+
+/*Schwierigkeit Icon*/
+
+/* =========================
+   Rechner Btn (Apply, Reset, Plus, Minus) Stil
+   ========================= */
+.action-btn {
+    background-color: #BE2336;
+    color: #F5EACE;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+}
+
+.action-btn:hover {
+    background-color: #8B1528;
+}
+
+.action-btn:active {
+    transform: scale(0.98);
+}
+
+/* Plus und Minus Buttons */
+#plus, 
+#minus {
+    background-color: #BE2336;
+    color: #F5EACE;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    margin: 0 ;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    min-width: 44px;
+    max-width: 44px;
+}
+
+#plus:hover,
+#minus:hover {
+    background-color: #8B1528;
+    transform: scale(1.05);
+}
+
+#plus:active,
+#minus:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   Angepasster Stil für Checkboxen im Rechner
+   ========================= */
+.rechner input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 2px solid #BE2336;
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.rechner input[type="checkbox"]:hover {
+    background-color: rgba(190, 35, 54, 0.2);
+    box-shadow: 0 0 8px rgba(190, 35, 54, 0.5);
+}
+
+.rechner input[type="checkbox"]:checked {
+    background-color: #BE2336;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23F5EACE' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+}
+
+.rechner input[type="checkbox"]:focus-visible {
+    outline: 2px solid #F5EACE;
+    outline-offset: 2px;
+}
+
+.rechner tr:has(input[type="checkbox"]:checked) td {
+    text-decoration: line-through;
+    color: #BE2336;
+}
+
+
+
+/* =========================
+   responsive Design für Infos, Portionen Angabe und Mengen
+    =========================*/
+
+
+    @media (max-width: 900px){
+  .meta{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .meta-unit{
+    grid-column: 2 / 3;
+  }
+}
+ /*========================= ========================= ========================= =========================*/
+
+
+/* =========================
+   Zubereitung Schritte Stil 
+   =========================*/
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 3.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.step-number {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #BE2336;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F5EACE;
+}
+
+.step-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.step-list li {
+  margin-bottom: 0.35rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.92;
+}
+
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: 1fr;
+  } 
+}
+
+
+
+ /*========================= ========================= ========================= =========================*/
+
+/* =========================
+   Hilfsmittel Stil 
+   =========================*/
+   .tools{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.tool{
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(245,234,206,0.15);
+  border-radius: 14px;
+  background: rgba(0,0,0,0.12);
+}
+
+.tool-icon{
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(190,35,54,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.tool-title{
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F5EACE;
+}
+
+.tool-text{
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px){
+  .tools{ grid-template-columns: 1fr; }
+}
+
+/*Checkbox Stil für Hilfsmittel*/
+/* Tool Card als klickbares Label */
+.tool-check{
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Native Checkbox verstecken (aber zugänglich lassen) */
+.tool-cb{
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #BE2336;
+  border-radius: 6px;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* Häkchen */
+.tool-cb::after{
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(0);
+  transition: transform 0.15s ease;
+  background: #F5EACE;
+  clip-path: polygon(14% 54%, 0 68%, 40% 100%, 100% 22%, 86% 8%, 40% 72%);
+}
+
+.tool-cb:checked{
+  background: #BE2336;
+}
+
+.tool-cb:checked::after{
+  transform: scale(1);
+}
+
+/* Focus sichtbar (Tastatur) */
+.tool-cb:focus-visible{
+  outline: 2px solid #F5EACE;
+  outline-offset: 3px;
+}
+
+/* Checked = Card wirkt "erledigt" */
+.tool-check:has(.tool-cb:checked){
+  opacity: 0.75;
+  border-color: rgba(190,35,54,0.6);
+}
+
+.tool-check:has(.tool-cb:checked) .tool-title,
+.tool-check:has(.tool-cb:checked) .tool-text{
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(190,35,54,0.9);
+}
+
+/*Tool Icons*/
+.tool-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+
+
+/*=========================
+   Recipee Footer Stil 
+   =========================*/
+
+.recipe-footer {
+   background-color: #F5EACE; /* Flaschen Ettiket Farbe */
+   color: #231F20; /*Makers Mark Schriftfarbe*/
+    padding: 5rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+   
+}
+.footer-left h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color : #be2336; /* Wachsrot Header */
+}
+.footer-left h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    color : #be2336; /* Wachsrot Header */
+}
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.footer-right h3 {
+    font-size: 2rem;
+    margin: 0;
+    color : #be2336; /* Wachsrot Header */
+   
+}
+.bartender-tips ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.bartender-tips li {
+  position: relative;
+    padding-left: 1.4rem;
+}
+
+.bartender-tips li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top:0;
+    color: #BE2336; /* Wachsrot Header */
+    font-size: 2.0rem;
+}
+
+/* =========================
+   Geschmacksnoten (rechts)
+   ========================= */
+
+.geschmacksnoten .taste-title{
+  margin: 0 0 2rem 0;
+}
+
+.geschmacksnoten .taste-row{
+  display: grid;
+  grid-template-columns: 110px 1fr; /* links Label, rechts Balken */
+  align-items: center;
+  gap: 1.6rem;
+  margin: 1.3rem 0;
+}
+
+.geschmacksnoten .taste-label{
+  color: #231F20;
+}
+
+/* weißer Balken (Track) */
+.geschmacksnoten .taste-bar{
+  height: 10px;
+  background: #aa8686;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+/* roter Anteil (Fill) */
+.geschmacksnoten .taste-fill{
+  display: block;
+  height: 100%;
+  width: calc(var(--v) * 1%);
+  background: #be2336;      
+  border-radius: 999px;
+}
+
+
+/* =========================
+   Bewertungen / Sterne
+   ========================= */
+
+.rating-row{
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* Container */
+.stars{
+  --rating: 0;     /* wird per JS gesetzt */
+  --max: 5;        /* wird per JS gesetzt */
+  --size: 1.4rem;
+
+  position: relative;
+  display: inline-block;   /* wichtig für ::before/::after */
+  font-size: var(--size);
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+}
+
+/* leere Sterne */
+.stars::before{
+  content: "★★★★★";
+  color: #aa8686;
+}
+
+/* gefüllte Sterne (werden abgeschnitten) */
+.stars::after{
+  content: "★★★★★";
+  color: #BE2336;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc((var(--rating) / var(--max)) * 100%);
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+.rating-count{
+  color: #231F20;
+  font-size: 0.95rem;
+}
+
+/*Recipe Footer Responsive*/
+
+@media (max-width: 1246px){
+  .recipe-footer{
+    grid-template-columns: 1fr;
+    gap: 6rem;              /* statt 30rem */
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px){
+  .recipe-footer{
+    padding: 2.2rem;
+    gap: 4rem;
+  }
+
+  /* Überschriften etwas kleiner */
+  .footer-left h2,
+  .footer-left h3{
+    font-size: 2rem;
+  }
+
+  .footer-right h3{
+    font-size: 1.8rem;
+  }
+
+  /* Geschmacksnoten: Label + Balken enger */
+  .geschmacksnoten .taste-row{
+    grid-template-columns: 90px 1fr;
+    gap: 1rem;
+  }
+
+  /* Sterne + Text sauber umbrechen */
+  .rating-row{
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 420px){
+  .geschmacksnoten .taste-row{
+    grid-template-columns: 1fr; /* Label über Balken */
+    gap: 0.6rem;
+  }
+
+  .geschmacksnoten .taste-bar{
+    height: 12px; /* bisschen dicker, besser touch */
+  }
+}
+
+
+
+/*========================= ========================= ========================= =========================*/
+
+
+/* =========================
+   Allgemeine Abstände und Footer Stil 
+   =========================*/
+
+
+section {
+    margin-bottom: rem;
+}
+
+footer {
+    background-color: #2c2c2c;
+    text-align: center;
+    padding: 1rem;
+}
